@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Хлобощин](https://up.htmlacademy.ru/htmlcss/21/user/335715).
-* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
+* Наставник: [Сергей (firefoxic) Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
