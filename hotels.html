@@ -7,14 +7,14 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="http://placehold.it/30x30" width="30" height="30" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="multimedia.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="state-map.html">Гостиницы</a></li>
+          <li><a href="state-map.html">Карта штата</a></li>
+          <li><a>Гостиницы</a></li>
         </ul>
         <!-- Здесь будет форма фильтрации -->
       </nav>
@@ -42,65 +42,53 @@
         </header>
         
         <h2 class="visually-hidden">Список</h2>
-        <ul class="hotel-list">
-          <li class="hotel-item">
-            <h3>Amara Resort & Spa</h3>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
-            
-            <h4 class="visually-hidden">Тип</h4>
-            <p class="hotel-type">Гостиница</p>
-            
-            <h4 class="visually-hidden">Цена</h4>
-            <p class="hotel-price">от 4000 р.</p>
-            
-            <h4 class="visually-hidden">Количество звезд</h4>
-            <p class="hotel-stars four-stars">4</p>
-            
-            <h4>Рейтинг</h4>
-            <p class="hotel-rating">8.5</p>
-            
-            <a class="button hotel-info-button" href="#">Подробнее</a>
-            <a class="button book-it-hotel-button" href="#">Забронировать</a>
-          </li>
-          <li class="hotel-item">
-            <h3>Desert Quail Inn</h3>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Desert Quail Inn">
-            
-            <h4 class="visually-hidden">Тип</h4>
-            <p class="hotel-type">Мотель</p>
-            
-            <h4 class="visually-hidden">Цена</h4>
-            <p class="hotel-price">от 3000 р.</p>
-            
-            <h4 class="visually-hidden">Количество звезд</h4>
-            <p class="hotel-stars three-stars">3</p>
-            
-            <h4>Рейтинг</h4>
-            <p class="hotel-rating">8.9</p>
-            
-            <a class="button hotel-info-button" href="#">Подробнее</a>
-            <a class="button book-it-hotel-button" href="#">Забронировать</a>
-          </li>
-          <li class="hotel-item">
-            <h3>Villas at Poco Diablo</h3>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Villas at Poco Diablo">
-            
-            <h4 class="visually-hidden">Тип</h4>
-            <p class="hotel-type">Апартаменты</p>
-            
-            <h4 class="visually-hidden">Цена</h4>
-            <p class="hotel-price">от 2000 р.</p>
-            
-            <h4 class="visually-hidden">Количество звезд</h4>
-            <p class="hotel-stars two-stars">2</p>
-            
-            <h4>Рейтинг</h4>
-            <p class="hotel-rating">9.2</p>
-            
-            <a class="button hotel-info-button" href="#">Подробнее</a>
-            <a class="button book-it-hotel-button" href="#">Забронировать</a>
-          </li>
-        </ul>
+        <table class="hotel-list">
+          <tr class="visually-hidden">
+            <th>Наименование</th>
+            <th>Картинка</th>
+            <th>Тип</th>
+            <th>Цена</th>
+            <th>Количество звезд</th>
+            <th>Рейтинг</th>
+            <th>Действия</th>
+          </tr>
+          <tr class="hotel-item">
+            <td class="hotel-name">Amara Resort &amp; Spa</td>
+            <td class="hotel-img"><img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort &amp; Spa"></td>
+            <td class="hotel-type">Гостиница</td>
+            <td class="hotel-price">от 4000 р.</td>
+            <td class="hotel-stars four-stars">4</td>
+            <td class="hotel-rating">8.5</td>
+            <td class="hotel-actions">
+              <a class="button hotel-info-button" href="#">Подробнее</a>
+              <a class="button book-it-hotel-button" href="#">Забронировать</a>
+            </td>
+          </tr>
+          <tr class="hotel-item">
+            <td class="hotel-name">Desert Quail Inn</td>
+            <td class="hotel-img"><img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort &amp; Spa"></td>
+            <td class="hotel-type">Мотель</td>
+            <td class="hotel-price">от 3000 р.</td>
+            <td class="hotel-stars four-stars">3</td>
+            <td class="hotel-rating">8.9</td>
+            <td class="hotel-actions">
+              <a class="button hotel-info-button" href="#">Подробнее</a>
+              <a class="button book-it-hotel-button" href="#">Забронировать</a>
+            </td>
+          </tr>
+          <tr class="hotel-item">
+            <td class="hotel-name">Villas at Poco Diablo</td>
+            <td class="hotel-img"><img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort &amp; Spa"></td>
+            <td class="hotel-type">Апартаменты</td>
+            <td class="hotel-price">от 2000 р.</td>
+            <td class="hotel-stars four-stars">2</td>
+            <td class="hotel-rating">9.2</td>
+            <td class="hotel-actions">
+              <a class="button hotel-info-button" href="#">Подробнее</a>
+              <a class="button book-it-hotel-button" href="#">Забронировать</a>
+            </td>
+          </tr>
+        </table>
       </section>
     </main>
     <footer class="main-footer">
