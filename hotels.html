@@ -16,7 +16,47 @@
           <li><a href="state-map.html">Карта штата</a></li>
           <li><a>Гостиницы</a></li>
         </ul>
-        <!-- Здесь будет форма фильтрации -->
+        <form
+          method="post"
+          action="https://echo.htmlacademy.ru"
+          oninput="outputPriceFrom.value=filterPriceFrom.value; outputPriceTo.value=filterPriceTo.value;"
+        >
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            
+            <input type="checkbox" id="filterPool" name="pool" checked>
+            <label for="filterPool">Бассейн</label>
+            
+            <input type="checkbox" id="filterParkingPlace" name="parking-place">
+            <label for="filterParkingPlace">Парковка</label>
+            
+            <input type="checkbox" id="filterWifi" name="wifi">
+            <label for="filterWifi">WI-FI</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            
+            <input type="checkbox" id="filterHotel" name="hotel" checked>
+            <label>Гостиница</label>
+            
+            <input type="checkbox" id="filterMotel" name="motel" checked>
+            <label>Мотель</label>
+            
+            <input type="checkbox" id="filterApartments" name="apartments" checked>
+            <label>Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(р):</legend>
+            
+            <span>от</span><output id="outputPriceFrom" for="filterPriceFrom">0</output>
+            <span>до</span><output id="outputPriceTo" for="filterPriceTo">3000</output>
+            
+            <input type="range" id="filterPriceFrom" name="price-from" min="0" max="4000" value="0">
+            <input type="range" id="filterPriceTo" name="price-to" min="0" max="4000" value="3000">
+            
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </nav>
     </header>
     <main class="container">
