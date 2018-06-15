@@ -1,0 +1,272 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  
+  background-color: #ffffff;
+}
+
+.site-navigation,
+.truecity-list,
+.hotel-list-sort-type-list,
+.hotel-list-sort-dir-list,
+.footer-social-list {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #766357;
+}
+
+.site-navigation a:not([href]) {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome {
+  height: 512px;
+  text-align: center;
+  
+  background: #9c807c url("../img/welcome-background.jpg") no-repeat 50% 22%;
+  background-size: cover;
+}
+
+.welcome img {
+  width: 458px;
+  height: 352px;
+  
+  margin-top: 100px;
+}
+
+.reason-item {
+  text-align: center;
+}
+
+.reason-item h2 {
+  line-height: 21px;
+}
+
+.truecity-list {
+  color: #333333;
+  
+  background-color: #ffffff;
+}
+
+.truecity-item h3 {
+  font-size: 21px;
+}
+
+.reason-item:nth-child(1),
+.reason-item:nth-child(2) {
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+}
+
+.reason-item:nth-child(3),
+.reason-item:nth-child(4),
+.reason-item:nth-child(5) {
+  background-color: #eeeeee;
+}
+
+.promo strong {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-info {
+  line-height: 24px;
+}
+
+.search-modal label,
+.search-modal input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-modal input {
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.search-modal input:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+.search-modal input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.button {
+  font: inherit;
+  
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  
+  background-color: #000000;
+  border: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.brown-button {
+  background-color: #766357;
+}
+
+.brown-button:hover,
+.brown-button:focus {
+  background-color: #604e43;
+}
+
+.brown-button:active {
+  background-color: #503e33;
+}
+
+.blue-button {
+  background-color: #81b3d2;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #669ec0;
+}
+
+.blue-button:active {
+  background-color: #5496bd;
+}
+
+.filter-form {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  
+  background: #627788 url("../img/filter-background.jpg") 50% 20%;
+  background-size: 100% auto;
+}
+
+.filter-form legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.transparent-button {
+  color: #ffffff;
+  
+  background-color: transparent;
+}
+
+.transparent-button:hover,
+.transparent-button:focus,
+.transparent-button:active {
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.hotel-count {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-list-header {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.hotel-list-header h2 {
+  font-weight: 400;
+}
+
+.hotel-list-sort-type-item a {
+  color: rgba(0, 0, 0, 0.3);
+  
+  background-color: transparent;
+  
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.hotel-list-sort-type-item a.active {
+  color: #81b3d2;
+  
+  border: none;
+}
+
+.hotel-list-sort-type-item a:hover,
+.hotel-list-sort-type-item a:focus {
+  color: #81b3d2;
+}
+
+.hotel-list-sort-type-item a:active {
+  color: #000000;
+  
+  border: none;
+}
+
+.hotel-name a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-type,
+.hotel-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.footer-sedona-hashtag {
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+}

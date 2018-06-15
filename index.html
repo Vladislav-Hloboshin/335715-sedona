@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -36,14 +39,17 @@
               <li class="truecity-item">
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <img src="img/icon-1.svg" width="75" height="72" alt="Иконка жилья">
               </li>
               <li class="truecity-item">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <img src="img/icon-3.svg" width="74" height="70" alt="Иконка еды">
               </li>
               <li class="truecity-item">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
+                <img src="img/icon-2.svg" width="64" height="76" alt="Иконка сувенира">
               </li>
             </ul>
           </li>
@@ -72,22 +78,30 @@
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         
         <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button search-button" href="#search-form">Поиск гостиницы в Седоне</a>
+        <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
         
-        <form id="search-form" class="modal search-modal" method="post" action="https://echo.htmlacademy.ru">          
-          <label for="searchArrivalDate">Дата заезда:</label>
-          <input id="searchArrivalDate" name="arrival-date" type="date">
+        <form id="search-form" class="modal search-modal" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="searchArrivalDate">Дата заезда:</label>
+            <input id="searchArrivalDate" name="arrival-date" type="date">
+          </p>
           
-          <label for="searchDepartureDate">Дата выезда:</label>
-          <input id="searchDepartureDate" name="departure-date" type="date">
+          <p>
+            <label for="searchDepartureDate">Дата выезда:</label>
+            <input id="searchDepartureDate" name="departure-date" type="date">
+          </p>
           
-          <label for="searchNumberOfAdults">Взрослые:</label>
-          <input id="searchNumberOfAdults" name="number-of-adults" type="number" min="1" value="2">
+          <p>
+            <label for="searchNumberOfAdults">Взрослые:</label>
+            <input id="searchNumberOfAdults" name="number-of-adults" type="number" min="1" value="2">
+          </p>
           
-          <label for="searchNumberOfChildren">Дети:</label>
-          <input id="searchNumberOfChildren" name="number-of-children" type="number" min="0" value="0">
+          <p>
+            <label for="searchNumberOfChildren">Дети:</label>
+            <input id="searchNumberOfChildren" name="number-of-children" type="number" min="0" value="0">
+          </p>
           
-          <button type="submit">Найти</button>
+          <button class="button blue-button" type="submit">Найти</button>
         </form>
       </section>
       
@@ -101,10 +115,10 @@
     </main>
     <footer class="main-footer">
       <span class="footer-sedona-hashtag">#VISITSEDONA</span>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#" title="Наш твитер">Твитер</a></li>
-        <li><a class="social-button" href="#" title="Наш Фэйсбук">Фэйсбук</a></li>
-        <li><a class="social-button" href="#" title="Наш Инстаграм">Инстаграм</a></li>
+      <ul class="footer-social-list">
+        <li class="footer-social-item"><a class="twitter-social-button" href="#" title="Наш Твитер">Твитер</a></li>
+        <li class="footer-social-item"><a class="facebook-social-button" href="#" title="Наш Фэйсбук">Фэйсбук</a></li>
+        <li class="footer-social-item"><a class="outube-social-button" href="#" title="Наш Youtube">Youtube</a></li>
       </ul>
       <section class="footer-htmlacademy-copyright">
         <h2>Website by</h2>
