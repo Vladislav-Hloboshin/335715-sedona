@@ -75,6 +75,14 @@ a {
 
 .reason-item {
   text-align: center;
+  
+  background-color: #eeeeee;
+}
+
+.reason-item-with-photo {
+  color: #ffffff;
+  
+  background-color: #81b3d2;
 }
 
 .reason-item h2 {
@@ -89,19 +97,6 @@ a {
 
 .truecity-item h3 {
   font-size: 21px;
-}
-
-.reason-item:nth-child(1),
-.reason-item:nth-child(2) {
-  color: #ffffff;
-  
-  background-color: #81b3d2;
-}
-
-.reason-item:nth-child(3),
-.reason-item:nth-child(4),
-.reason-item:nth-child(5) {
-  background-color: #eeeeee;
 }
 
 .promo strong {
