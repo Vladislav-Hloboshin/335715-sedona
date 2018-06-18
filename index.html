@@ -24,16 +24,18 @@
         <img src="img/welcome.png" width="458" height="352" alt="Welcome to the gorgeous SEDONA">
       </div>
     </header>
-    <main class="container">
-      
+    <main class="index-container">
+
       <article class="promo">
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        
+
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
         <ol class="reason-list">
           <li class="reason-item reason-item-with-photo">
-            <h2>Настоящий городок</h2>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="reason-item-wrapper">
+              <h2>Настоящий городок</h2>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/city.jpg" width="800" height="401" alt="Городок">
             <ul class="truecity-list">
               <li class="truecity-item">
@@ -50,9 +52,11 @@
               </li>
             </ul>
           </li>
-          <li class="reason-item reason-item-with-photo">
-            <h2>Там есть мост дьявола</h2>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <li class="reason-item reason-item-with-photo reverse-order">
+            <div class="reason-item-wrapper">
+              <h2>Там есть мост дьявола</h2>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
             <img src="img/devils-bridge.jpg" width="800" height="400" alt="Мост дьявола">
           </li>
           <li class="reason-item">
@@ -70,43 +74,43 @@
         </ol>
         <strong>Заинтересовались?</strong>
       </article>
-      
+
       <section class ="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        
+
         <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
-        
+
         <form id="search-form" class="modal search-modal" method="post" action="https://echo.htmlacademy.ru">
-          <p>
-            <label for="searchArrivalDate">Дата заезда:</label>
-            <input id="searchArrivalDate" name="arrival-date" type="date">
-          </p>
-          
-          <p>
-            <label for="searchDepartureDate">Дата выезда:</label>
-            <input id="searchDepartureDate" name="departure-date" type="date">
-          </p>
-          
-          <p>
-            <label for="searchNumberOfAdults">Взрослые:</label>
-            <input id="searchNumberOfAdults" name="number-of-adults" type="number" min="1" value="2">
-          </p>
-          
-          <p>
-            <label for="searchNumberOfChildren">Дети:</label>
-            <input id="searchNumberOfChildren" name="number-of-children" type="number" min="0" value="0">
-          </p>
-          
+          <div class="form-content-wrapper">
+            <div class="form-content-row">
+              <label for="searchArrivalDate">Дата заезда:</label>
+              <input id="searchArrivalDate" name="arrival-date" type="date">
+            </div>
+
+            <div class="form-content-row">
+              <label for="searchDepartureDate">Дата выезда:</label>
+              <input id="searchDepartureDate" name="departure-date" type="date">
+            </div>
+
+            <div class="form-content-row guest-counters">
+              <label for="searchNumberOfAdults">Взрослые:</label>
+              <input id="searchNumberOfAdults" name="number-of-adults" type="number" min="1" value="2">
+
+              <label for="searchNumberOfChildren">Дети:</label>
+              <input id="searchNumberOfChildren" name="number-of-children" type="number" min="0" value="0">
+            </div>
+          </div>
+
           <button class="button blue-button" type="submit">Найти</button>
         </form>
       </section>
-      
+
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
-        
+
         <div id="map">
-          <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </div>
       </section>
     </main>
