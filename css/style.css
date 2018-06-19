@@ -218,6 +218,10 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  
+  margin: 0;
+  margin-left: 73px;
+  height: 0;
 }
 
 .hotel-list-header {
@@ -470,15 +474,7 @@ a {
   margin-left: 163px;
 }
 
-.hotel-count {
-  margin: 0;
-  padding: 0;
-  height: 0;
-}
-
 .hotels-container {
-  padding-left: 73px;
-  padding-right: 73px;
   padding-top: 40px;
 }
 
@@ -490,8 +486,13 @@ a {
   margin-left: 32px;
 }
 
+.hotel-list-header,
 .hotel-item {
-  padding: 20px 0;
+  padding: 20px 73px;
+}
+
+.hotel-list-header {
+  padding-top: 0;
 }
 
 .hotel-list {
@@ -509,27 +510,36 @@ a {
   flex-wrap: wrap;
 }
 
-.hotel-item::before {
-  content: '';
-  width: 100%;
-  order: 1;
+.hotel-name {
+  margin-left: 30px;
+  margin-right: auto;
+  min-width: 62%;
+  max-width: 72%;
 }
 
-.hotel-item :nth-child(n+3) {
-  order: 1;
-}
-
-.hotel-name,
-.hotel-price-wrapper {
-  flex-grow: 1;
+.hotel-stars {
+  min-width: 120px;
+  text-align: right;
 }
 
 .hotel-price-wrapper {
   margin-left: 6px;
+  margin-right: auto;
 }
 
 .hotel-img {
-  display: none;
+  order: -1;
+  height: 26px;
+}
+
+.hotel-type-wrapper {
+  margin-left: 165px;
+}
+
+.hotel-type-wrapper p,
+.hotel-price-wrapper p {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .hotel-rating {
