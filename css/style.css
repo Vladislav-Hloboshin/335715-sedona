@@ -106,17 +106,47 @@ input[type="checkbox"].visually-hidden{
   background-color: #ffffff;
 }
 
+.truecity-item {
+  padding: 162px 47px 68px;
+  position: relative;
+  min-width: 400px;
+  box-sizing: border-box
+}
+
 .truecity-item h3 {
   font-size: 21px;
   margin: 0;
 }
 
-.truecity-item {
-  padding: 162px 47px 68px;
-}
-
 .truecity-item p {
   margin-top: 23px;
+}
+
+.truecity-item::before {
+  content: "";
+  
+  position: absolute;
+  
+  width:100%;
+  height: 132px;
+  
+  left:0;
+  top: 0;
+  
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.truecity-item.housing::before {
+  background-image: url("../img/icon-1.svg");
+}
+
+.truecity-item.food::before {
+  background-image: url("../img/icon-3.svg");
+}
+
+.truecity-item.souvenirs::before {
+  background-image: url("../img/icon-2.svg");
 }
 
 .promo h1 {
@@ -414,6 +444,11 @@ a.search-button {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 53px;
+  counter-reset: reason-counter;
+}
+
+.reason-list .reason-item {
+  counter-increment: reason-counter;
 }
 
 .truecity-list {
@@ -451,6 +486,7 @@ a.search-button {
   width: 400px;
   box-sizing: border-box;
   padding: 48px 71px 45px;
+  position: relative;
 }
 
 .reason-item-wrapper h2 {
@@ -459,6 +495,13 @@ a.search-button {
 
 .reason-item-wrapper p {
   margin-top: 65px;
+}
+
+.reason-item-wrapper::before {
+  content: "— №" counter(reason-counter) " —";
+  position: absolute;
+  top: 113px;
+  left: 174px;
 }
 
 .guest-counter-wrapper {
@@ -617,8 +660,27 @@ a.search-button {
 }
 
 .hotel-stars {
-  min-width: 120px;
+  width: 17px;
+  height: 24px;
   background-image: url("../img/star.svg");
+  background-repeat: space;
+  background-position: 0 4px;
+}
+
+.hotel-stars.two-stars {
+  width: 38px;
+}
+
+.hotel-stars.three-stars {
+  width: 62px;
+}
+
+.hotel-stars.four-stars {
+  width: 87px;
+}
+
+.hotel-stars.five-stars {
+  width: 88px;
 }
 
 .hotel-price-wrapper {
