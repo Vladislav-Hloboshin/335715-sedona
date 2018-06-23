@@ -49,6 +49,7 @@ input[type="checkbox"].visually-hidden{
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -726,7 +727,7 @@ a.search-button {
 }
 
 .main-footer {
-  padding: 39px 100px 34px 132px;;
+  padding: 36px 100px 36px 132px;;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   width: 100%;
@@ -739,22 +740,34 @@ a.search-button {
 .footer-htmlacademy-copyright {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-}
-
-.footer-social-list {
-  margin: 0 auto;
-}
-
-.footer-htmlacademy-copyright {
   align-items: center;
 }
 
-.footer-htmlacademy-copyright h2 {
+.footer-social-list {
+  width: 150px;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 256px;
+}
+
+.footer-htmlacademy-copyright {
+  margin-left: 228px;
+}
+
+.footer-htmlacademy-copyright span {
+  color: #000000;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  margin-top: 8px;
+}
+
+.footer-htmlacademy-copyright:hover path,
+.footer-htmlacademy-copyright:focus path {
+  fill: #81b3d2;
+}
+
+.footer-htmlacademy-copyright:active path {
+  fill: #bdbbbc;
 }
 
 .footer-htmlacademy-logo {
@@ -867,4 +880,27 @@ a.search-button {
 
 .range-toggle-max {
   left: 252px;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:46px;
+  height: 48px;
+  
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
 }
