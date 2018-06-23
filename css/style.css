@@ -736,12 +736,19 @@ a.search-button {
 }
 
 .main-footer {
-  padding: 36px 100px 36px 132px;;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   width: 100%;
   box-sizing: border-box;
   bottom: 0;
+  padding-top: 37px;
+  padding-bottom: 36px;
+}
+
+.footer-column {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
 }
 
 .main-footer,
@@ -749,18 +756,15 @@ a.search-button {
 .footer-htmlacademy-copyright {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-social-list {
-  width: 150px;
-  justify-content: space-between;
-  margin: 0;
-  margin-left: 256px;
-}
 
-.footer-htmlacademy-copyright {
-  margin-left: 228px;
+.footer-social-list {
+  justify-content: space-between;
+  margin: 0 auto;;
+  width: 150px;
 }
 
 .footer-htmlacademy-copyright span {
