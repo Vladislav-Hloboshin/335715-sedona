@@ -44,7 +44,11 @@ input[type="checkbox"].visually-hidden{
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 531px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
   z-index: 1;
 }
 
