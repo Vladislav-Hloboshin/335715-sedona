@@ -727,12 +727,12 @@ a.search-button {
 
 .hotel-info-button {
   display: block;
-  width: 110px;
+  padding: 0 16px;
 }
 
 .book-it-hotel-button {
   display: block;
-  width: 142px;
+  padding: 0 18px;
 }
 
 .main-footer {
