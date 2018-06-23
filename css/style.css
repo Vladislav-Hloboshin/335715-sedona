@@ -659,7 +659,7 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 .filter-form-column:not(:first-child) {
-  margin-left: 100px;
+  margin-left: 97px;
 }
 
 .filter-form-column:last-child {
@@ -1018,5 +1018,19 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 .calendar-icon:active path {
+  fill: #81b3d2;
+}
+
+.hotel-list-sort-dir-list {
+  width: 34px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-dir path {
+  fill: #cacaca;
+}
+
+.sort-dir.active path {
   fill: #81b3d2;
 }
