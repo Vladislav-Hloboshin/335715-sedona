@@ -253,6 +253,8 @@ a.search-button {
   padding-top: 55px;
   background-color: white;
   top: 100%;
+  box-sizing: border-box;
+  width: 568px;
 }
 
 .search-modal button[type="submit"] {
@@ -531,7 +533,6 @@ a.search-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
 }
 
 .form-content-row:not(:first-child) {
@@ -548,12 +549,21 @@ a.search-button {
 
 .form-content-row input {
   box-sizing: border-box;
+  width: 100px;
+  flex-grow: 1;
+}
+
+.form-field-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-content-row .form-field-wrapper {
   flex-grow: 1;
 }
 
 .form-content-row.guest-counters input {
-  flex-grow: 0;
-  width: 114px;
   text-align: center;
 }
 
