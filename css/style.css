@@ -1031,10 +1031,10 @@ input[type="checkbox"]:checked ~ label::before {
   align-items: center;
 }
 
-.sort-dir path {
+.hotel-list-sort-dir-item path {
   fill: #cacaca;
 }
 
-.sort-dir.active path {
+.hotel-list-sort-dir-item.active path {
   fill: #81b3d2;
 }
