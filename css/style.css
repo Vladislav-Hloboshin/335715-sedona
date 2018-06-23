@@ -264,6 +264,12 @@ a.search-button {
   padding-bottom: 15px;
 }
 
+.search-modal input.date {
+  padding-left: 10px;
+  padding-right: 33px;
+  text-transform: uppercase;
+}
+
 .map img {
   display: block;
 }
@@ -525,6 +531,7 @@ a.search-button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 
 .form-content-row:not(:first-child) {
@@ -916,4 +923,23 @@ a.search-button {
 
 .social-button:active path {
   fill: #88b6d1;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 9px;
+  cursor: pointer;
+}
+
+.calendar-icon path {
+  fill: #cacaca;
+}
+
+.calendar-icon:hover path,
+.calendar-icon:focus path {
+  fill: #000000;
+}
+
+.calendar-icon:active path {
+  fill: #81b3d2;
 }
