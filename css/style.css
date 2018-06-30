@@ -663,6 +663,14 @@ input[type="checkbox"]:checked ~ label::before {
   background-position: 4px 4px;
 }
 
+input[type="checkbox"]:disabled ~ label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+input[type="checkbox"]:checked:disabled ~ label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 .filter-form fieldset.filter-form-column {
   padding: 24px 11px 3px;
 }
