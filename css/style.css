@@ -44,7 +44,11 @@ input[type="checkbox"].visually-hidden{
 .main-header-logo {
   position: absolute;
   top: 0;
-  left: 531px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
   z-index: 1;
 }
 
@@ -1039,7 +1043,7 @@ input[type="checkbox"]:checked ~ label::before {
   height: 100%;
 }
 
-.sort-dir {
+.hotel-list-sort-dir-item a {
   width: 17px;
   height: 100%;
   display: flex;
@@ -1058,10 +1062,10 @@ input[type="checkbox"]:checked ~ label::before {
   margin-bottom: 2px;
 }
 
-.sort-dir path {
+.hotel-list-sort-dir-item path {
   fill: #cacaca;
 }
 
-.sort-dir.active path {
+.hotel-list-sort-dir-item.active path {
   fill: #81b3d2;
 }
