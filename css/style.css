@@ -1031,9 +1031,31 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 .hotel-list-sort-dir-list {
-  width: 34px;
   justify-content: space-between;
   align-items: center;
+}
+
+.hotel-list-sort-dir-item {
+  height: 100%;
+}
+
+.sort-dir {
+  width: 17px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sort-dir-asc {
+  justify-content: flex-start;
+}
+
+.sort-dir-desc {
+  justify-content: flex-end;
+}
+
+.sort-dir-desc svg {
+  margin-bottom: 2px;
 }
 
 .sort-dir path {
