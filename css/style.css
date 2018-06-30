@@ -820,12 +820,12 @@ input[type="checkbox"]:checked ~ label::before {
 
 .hotel-info-button {
   display: block;
-  padding: 0 16px;
+  padding: 0 17px;
 }
 
 .book-it-hotel-button {
   display: block;
-  padding: 0 18px;
+  padding: 0 17px;
 }
 
 .main-footer {
