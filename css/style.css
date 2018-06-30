@@ -281,12 +281,11 @@ a.search-button {
   }
 }
 
-.search-modal.shown {
+.search-modal-show {
   box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.15);
   transform: translateY(100%);
   
-  animation-name: show-search-modal;
-  animation-duration: 0.5s;
+  animation: show-search-modal 0.5s;
 }
 
 @keyframes hide-search-modal {
@@ -298,9 +297,8 @@ a.search-button {
   }
 }
 
-.search-modal.hidden {
-  animation-name: hide-search-modal;
-  animation-duration: 0.5s;
+.search-modal-hide {
+  animation: hide-search-modal 0.5s;
 }
 
 .search-modal,
@@ -1130,4 +1128,17 @@ a.search-button {
 
 .hotel-list-sort-dir-item.active path {
   fill: #81b3d2;
+}
+
+@keyframes field-error {
+  from {
+    border-color: red;
+  }
+  to {
+    border-color: #f2f2f2;
+  }
+}
+
+.field-error {
+  animation: field-error 1s;
 }
