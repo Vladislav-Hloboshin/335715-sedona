@@ -643,12 +643,12 @@ a.search-button {
   padding: 28px 58px;
 }
 
-input[type="checkbox"] ~ label {
+.filter-form input[type="checkbox"] ~ label {
   padding-left: 40px;
   position: relative;
 }
 
-input[type="checkbox"] ~ label::before {
+.filter-form input[type="checkbox"] ~ label::before {
   content: "";
   position: absolute;
   background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
@@ -658,16 +658,22 @@ input[type="checkbox"] ~ label::before {
   top: -7px;
 }
 
-input[type="checkbox"]:checked ~ label::before {
+.filter-form input[type="checkbox"]:focus ~ label::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-form input[type="checkbox"]:checked ~ label::before {
   background-image: url("../img/checkbox-on.svg");
   background-position: 4px 4px;
 }
 
-input[type="checkbox"]:disabled ~ label::before {
+.filter-form input[type="checkbox"]:disabled ~ label::before {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-input[type="checkbox"]:checked:disabled ~ label::before {
+.filter-form input[type="checkbox"]:checked:disabled ~ label::before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
