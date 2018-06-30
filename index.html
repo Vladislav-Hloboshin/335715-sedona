@@ -82,11 +82,12 @@
       </article>
 
       <section class ="search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <div class="search-container">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-        <p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
-
+          <p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
+        </div>
         <form id="search-form" class="modal search-modal" method="post" action="https://echo.htmlacademy.ru">
           <div class="form-content-wrapper">
             <div class="form-content-row">
@@ -180,5 +181,20 @@
         </a>
       </div>
     </footer>
+    <script>
+      var button = document.querySelector('.search-button');
+      var form = document.querySelector('.search-modal');
+      
+      button.addEventListener('click', function(e){
+        e.preventDefault();
+        if(form.classList.contains('shown')) {
+          form.classList.remove('shown');
+          form.classList.add('hidden');
+        } else {
+          form.classList.remove('hidden');
+          form.classList.add('shown');
+        }
+      });
+    </script>
   </body>
 </html>
