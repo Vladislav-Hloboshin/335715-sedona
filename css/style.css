@@ -902,12 +902,15 @@ a.search-button {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 22px;
+  margin-right: 3px;
 }
 
 .price-controls {
   position: relative;
+  display: flex;
   
   height: 32px;
+  width: 314px;
   margin-top: 4px;
   margin-bottom: 20px;
 
@@ -920,6 +923,7 @@ a.search-button {
 .price-controls::after {
   content: "";
   position: absolute;
+  transform: translateX(-50%);
   top: 50%;
   left: 50%;
 
@@ -931,8 +935,8 @@ a.search-button {
 }
 
 .price-controls label {
-  display: inline-block;
-
+  flex-basis: 50%;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 32px;
   vertical-align: top;
@@ -941,12 +945,12 @@ a.search-button {
 }
 
 .price-controls .min-price {
-  width: 93px;
+  
   padding-left: 64px;
 }
 
 .price-controls .max-price {
-  width: 104px;
+  
   padding-left: 54px;
 }
 
