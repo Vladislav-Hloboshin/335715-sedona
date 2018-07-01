@@ -176,7 +176,7 @@ input[type="checkbox"].visually-hidden{
 
 .promo {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .promo h1 {
@@ -209,7 +209,7 @@ input[type="checkbox"].visually-hidden{
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
 }
 
@@ -261,6 +261,7 @@ a.search-button {
 
 .search-modal {
   position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 55px;
@@ -1141,4 +1142,9 @@ a.search-button {
 
 .field-error {
   animation: field-error 1s;
+}
+
+.map-container {
+  width: 1200px;
+  height: 593px;
 }
