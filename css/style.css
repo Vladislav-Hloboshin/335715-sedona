@@ -110,7 +110,7 @@ input[type="checkbox"].visually-hidden{
 
 .reason-item {
   text-align: center;
-
+  flex-grow: 1;
   background-color: #eeeeee;
 }
 
@@ -530,10 +530,6 @@ a.search-button {
 
 .truecity-list li {
   flex-basis: 0;
-  flex-grow: 1;
-}
-
-.reason-item {
   flex-grow: 1;
 }
 
