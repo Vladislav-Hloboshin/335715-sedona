@@ -174,6 +174,11 @@ input[type="checkbox"].visually-hidden{
   background-image: url("../img/icon-2.svg");
 }
 
+.promo {
+  position: relative;
+  z-index: 2;
+}
+
 .promo h1 {
   font-size: 21px;
   line-height: 26px;
@@ -194,16 +199,21 @@ input[type="checkbox"].visually-hidden{
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  margin-top: 52px;
+  padding-top: 52px;
+  background-color: #fff;
 }
 
-.search {
+.search-container {
   padding: 0;
   padding-top: 9px;
   display: flex;
   flex-direction: column;
-  width: 568px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.search {
   position: relative;
 }
 
@@ -251,15 +261,52 @@ a.search-button {
 
 .search-modal {
   position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding: 55px;
   padding-top: 55px;
   background-color: white;
-  top: 100%;
+  bottom: 0;
   box-sizing: border-box;
-  width: 568px;
+  left: 0;
+  right: 0;
+}
+
+@keyframes show-search-modal {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.search-modal-show {
   box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.15);
+  transform: translateY(100%);
+  
+  animation: show-search-modal 0.5s;
+}
+
+@keyframes hide-search-modal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.search-modal-hide {
+  animation: hide-search-modal 0.5s;
+}
+
+.search-modal,
+.search-button {
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search-modal button[type="submit"] {
@@ -1086,4 +1133,22 @@ a.search-button {
 
 .hotel-list-sort-dir-item.active path {
   fill: #81b3d2;
+}
+
+@keyframes field-error {
+  from {
+    border-color: red;
+  }
+  to {
+    border-color: #f2f2f2;
+  }
+}
+
+.field-error {
+  animation: field-error 1s;
+}
+
+.map-container {
+  width: 1200px;
+  height: 593px;
 }

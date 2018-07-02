@@ -82,11 +82,12 @@
       </article>
 
       <section class ="search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <div class="search-container">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-        <p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
-
+          <p class="search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button search-button brown-button" href="#search-form">Поиск гостиницы в Седоне</a>
+        </div>
         <form id="search-form" class="modal search-modal" method="post" action="https://echo.htmlacademy.ru">
           <div class="form-content-wrapper">
             <div class="form-content-row">
@@ -135,7 +136,7 @@
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
 
-        <div id="map">
+        <div class="map-container">
           <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </div>
       </section>
@@ -180,5 +181,61 @@
         </a>
       </div>
     </footer>
+    <script>
+      var button = document.querySelector('.search-button');
+      var form = document.querySelector('.search-modal');
+      
+      button.addEventListener('click', function(evt){
+        evt.preventDefault();
+        if(form.classList.contains('search-modal-show')) {
+          form.classList.remove('search-modal-show');
+          form.classList.add('search-modal-hide');
+        } else {
+          form.classList.remove('search-modal-hide');
+          form.classList.add('search-modal-show');
+        }
+      });
+      
+      var arrivalDate = form.querySelector('[name=arrival-date]');
+      var departureDate = form.querySelector('[name=departure-date]');
+      var numberOfAdults = form.querySelector('[name=number-of-adults]');
+      var numberOfChildren = form.querySelector('[name=number-of-children]');
+      
+      form.addEventListener('submit', function(evt) {
+        var allFields = [arrivalDate, departureDate, numberOfAdults, numberOfChildren];
+        var errorFields = [];
+        allFields.forEach(function(field) {
+          if(!field.value) errorFields.push(field);
+        });
+        if(errorFields.length>0) {
+          evt.preventDefault();
+          errorFields.forEach(function(field) {
+            field.classList.remove('field-error');
+            field.offsetWidth = field.offsetWidth;
+            field.classList.add('field-error');
+          });
+        }
+      });
+    </script>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The map, centered at some point near Sedona
+        var map = new google.maps.Map(document.querySelector('.map-container'), {
+          zoom: 4,
+          center: {lat: 34.76, lng: -111.74},
+          disableDefaultUI: true,
+          zoom: 9
+        });
+        // The marker, positioned at Sedona
+        var marker = new google.maps.Marker({
+          map: map,
+          position: {lat: 34.87, lng: -111.76},
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi_yaXkh4NpYV478vTlBeoPimsvPKi-18&callback=initMap">
+    </script>
   </body>
 </html>
