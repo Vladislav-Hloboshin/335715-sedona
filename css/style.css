@@ -282,6 +282,7 @@ a.search-button {
   }
 }
 
+.search-modal:target,
 .search-modal-show {
   box-shadow: 0 7px 15px 1px rgba(0, 1, 1, 0.15);
   transform: translateY(100%);
