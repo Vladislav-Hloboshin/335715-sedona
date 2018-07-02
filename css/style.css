@@ -45,8 +45,7 @@ input[type="checkbox"].visually-hidden{
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 138px;
   height: 70px;
   z-index: 1;
@@ -135,7 +134,7 @@ input[type="checkbox"].visually-hidden{
   padding: 162px 47px 68px;
   position: relative;
   min-width: 400px;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .truecity-item h3 {
