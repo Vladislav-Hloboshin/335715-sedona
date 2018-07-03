@@ -1,9 +1,9 @@
 var button = document.querySelector('.search-button');
 var form = document.querySelector('.search-modal');
 
-button.addEventListener('click', function(evt){
+button.addEventListener('click', function(evt) {
   evt.preventDefault();
-  if(form.classList.contains('search-modal-show')) {
+  if (form.classList.contains('search-modal-show')) {
     form.classList.remove('search-modal-show');
     form.classList.add('search-modal-hide');
   } else {
