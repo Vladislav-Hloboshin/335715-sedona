@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+input::-ms-clear {
+  display: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden{
   position: absolute;
