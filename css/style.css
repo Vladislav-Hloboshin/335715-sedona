@@ -553,12 +553,12 @@ a.search-button {
 .reason-item-wrapper {
   width: 400px;
   box-sizing: border-box;
-  padding: 48px 49px 45px;
+  padding: 48px 0 45px;
   position: relative;
 }
 
 .reason-item-wrapper h2 {
-  margin: 0 72px 0;
+  margin: 0;
 }
 
 .reason-item-wrapper p {
