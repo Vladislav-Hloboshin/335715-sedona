@@ -615,11 +615,13 @@ a.search-button {
 .form-field-decrement-button {
   width: 38px;
   left: 0;
+  top: 0;
 }
 
 .form-field-increment-button {
   width: 39px;
   right: 0;
+  top: 0;
 }
 
 .form-field-decrement-button::before,
@@ -1074,6 +1076,7 @@ a.search-button {
 
 .calendar-icon {
   position: absolute;
+  top: 8px;
   right: 9px;
   cursor: pointer;
 }
