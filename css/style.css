@@ -922,6 +922,7 @@ a.search-button {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  margin-left: 2px;
 }
 
 .footer-htmlacademy-copyright:hover path,
@@ -934,7 +935,8 @@ a.search-button {
 }
 
 .footer-htmlacademy-logo {
-  margin-left: 7px;
+  margin-left: 9px;
+  margin-bottom: 1px;
 }
 
 .filter-range {
