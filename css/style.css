@@ -782,6 +782,14 @@ a.search-button {
   padding: 25px 71px;
   padding-right: 73px;
   padding-bottom: 29px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item > td {
+  display: block;
 }
 
 .hotel-list {
@@ -791,13 +799,6 @@ a.search-button {
 .hotel-list tbody {
   display: flex;
   flex-direction: column;
-}
-
-.hotel-item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-name {
