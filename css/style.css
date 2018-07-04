@@ -985,17 +985,16 @@ a.search-button {
 }
 
 .price-controls .min-price {
-  
   padding-left: 64px;
 }
 
 .price-controls .max-price {
-  
   padding-left: 54px;
 }
 
 .price-controls input {
   width: 50px;
+  height: 100%;
   margin: 0;
 
   color: inherit;
