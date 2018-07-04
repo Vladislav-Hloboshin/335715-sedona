@@ -882,13 +882,10 @@ a.search-button {
   content: "Рейтинг: ";
 }
 
-.hotel-info-button {
-  display: block;
-  padding: 0 17px;
-}
-
+.hotel-info-button,
 .book-it-hotel-button {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   padding: 0 17px;
 }
 
