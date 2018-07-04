@@ -129,7 +129,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .truecity-item {
-  padding: 162px 47px 68px;
+  padding: 162px 0 68px;
   position: relative;
   min-width: 400px;
   box-sizing: border-box;
