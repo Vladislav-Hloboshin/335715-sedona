@@ -318,6 +318,10 @@ a.search-button {
   text-transform: uppercase;
 }
 
+.map {
+  margin-bottom: -120px;
+}
+
 .map img {
   display: block;
 }
@@ -766,10 +770,6 @@ a.search-button {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hotels-container {
-  padding-bottom: 120px;
-}
-
 .hotel-list-sort-type-list {
   margin-left: 40px;
 }
@@ -888,10 +888,8 @@ a.search-button {
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  width: 100%;
   box-sizing: border-box;
-  bottom: 0;
+  position: relative;
   padding-top: 36px;
   padding-bottom: 36px;
 }
